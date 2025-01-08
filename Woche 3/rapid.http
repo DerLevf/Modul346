@@ -1,0 +1,25 @@
+#  Kopiere den Inhalt in die Zwischenablage und füge diesen dann in ein File 
+#  mit dem Namen: Weather.http in VS Code ein
+
+# RapidAPI
+# https://rapidapi.com
+
+@key = 58e43ba
+
+
+# WeatherAPI.com
+
+### Get current weather data for Pratteln
+GET https://weatherapi-com.p.rapidapi.com/current.json?q=Pratteln
+X-Rapidapi-Key: {{key}}
+X-Rapidapi-Host: weatherapi-com.p.rapidapi.com
+
+### Get current weather data for Airport LAX
+GET https://weatherapi-com.p.rapidapi.com/current.json?q=iata:LAX
+X-Rapidapi-Key: {{key}}
+X-Rapidapi-Host: weatherapi-com.p.rapidapi.com
+
+### Get 3 days forcast for weather data for Pratteln
+GET https://weatherapi-com.p.rapidapi.com/forecast.json?q=Pratteln&days=3
+X-Rapidapi-Key: {{key}}
+X-Rapidapi-Host: weatherapi-com.p.rapidapi.com
